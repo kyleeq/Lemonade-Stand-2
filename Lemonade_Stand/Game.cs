@@ -30,5 +30,29 @@ namespace Lemonade_Stand
             {
             }
         }
+
+        public int income
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
+
+        public int expenses
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
+
+        public int liquidatedInventoryValue
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
     }
 }

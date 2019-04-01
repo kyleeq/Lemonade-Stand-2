@@ -14,5 +14,21 @@ namespace Lemonade_Stand
             {
             }
         }
+
+        public Dictionary recipe
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
+
+        public int pricePerCup
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
     }
 }
