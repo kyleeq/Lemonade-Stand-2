@@ -7,5 +7,12 @@ namespace Lemonade_Stand
 {
     public class Player
     {
+        public Inventory Inventory
+        {
+            get => default(Inventory);
+            set
+            {
+            }
+        }
     }
 }

@@ -7,5 +7,20 @@ namespace Lemonade_Stand
 {
     public class Day
     {
+        public Customer Customer
+        {
+            get => default(Customer);
+            set
+            {
+            }
+        }
+
+        public Weather Weather
+        {
+            get => default(Weather);
+            set
+            {
+            }
+        }
     }
 }
