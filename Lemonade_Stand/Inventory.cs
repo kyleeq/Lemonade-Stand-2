@@ -7,6 +7,8 @@ namespace Lemonade_Stand
 {
     public class Inventory
     {
+        private int liquidatedInventoryValue;
+
         public int iceAmount
         {
             get => default(int);

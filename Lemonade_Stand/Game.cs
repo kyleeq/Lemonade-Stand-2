@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Lemonade_Stand
 {
-    public abstract class Game
+    public class Game
     {
         public Day Day
         {
@@ -26,30 +26,6 @@ namespace Lemonade_Stand
         public Player Player
         {
             get => default(Player);
-            set
-            {
-            }
-        }
-
-        public int income
-        {
-            get => default(int);
-            set
-            {
-            }
-        }
-
-        public int expenses
-        {
-            get => default(int);
-            set
-            {
-            }
-        }
-
-        public int liquidatedInventoryValue
-        {
-            get => default(int);
             set
             {
             }

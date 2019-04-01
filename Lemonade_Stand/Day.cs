@@ -7,6 +7,8 @@ namespace Lemonade_Stand
 {
     public class Day
     {
+        private int customerLoop;
+
         public Customer Customer
         {
             get => default(Customer);

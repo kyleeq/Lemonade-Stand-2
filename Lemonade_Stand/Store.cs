@@ -7,6 +7,8 @@ namespace Lemonade_Stand
 {
     public class Store
     {
+        private int poop;
+
         public int lemons
         {
             get => default(int);

@@ -7,6 +7,9 @@ namespace Lemonade_Stand
 {
     public class Player
     {
+        private int expenses;
+        private int income;
+
         public Inventory Inventory
         {
             get => default(Inventory);
