@@ -7,5 +7,36 @@ namespace Lemonade_Stand
 {
     public class Inventory
     {
+        public int iceAmount
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
+
+        public int lemonsAmount
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
+
+        public int paperCupsAmount
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
+
+        public int sugarAmountInCups
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
     }
 }
