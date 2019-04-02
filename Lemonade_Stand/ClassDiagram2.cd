@@ -13,7 +13,7 @@
       <Field Name="paperCups" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAABAgAACABAAAAAAgAAAAAAAAAgA=</HashCode>
+      <HashCode>CAAEAAAAAAAAEAEAABAgAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
       <FileName>Store.cs</FileName>
     </TypeIdentifier>
   </Class>
