@@ -8,14 +8,22 @@ namespace Lemonade_Stand
     public class Inventory
     {
         // member variables        
-        private int lemonStock;
-        private int iceStock;
-        private int cupStock;
-        private int sugarStock;
+        private int lemonStock; // number if lemons
+        private int iceStock; // number of cubes
+        private int cupStock; // number of cups
+        private int sugarStock; // in cups
         private int liquidatedInventoryValue;
 
         // constructor
+        public Inventory()
+        {
+            lemonStock = 0;
+            iceStock = 0;
+            cupStock = 0;
+            liquidatedInventoryValue = 0;
+        }
 
         // member methods
+
     }
 }
