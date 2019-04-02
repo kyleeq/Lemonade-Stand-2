@@ -9,11 +9,18 @@ namespace Lemonade_Stand
     {
         private int expenses;
         private int income;
-        private int field;
 
         public Inventory Inventory
         {
             get => default(Inventory);
+            set
+            {
+            }
+        }
+
+        public Recipe Recipe
+        {
+            get => default(Recipe);
             set
             {
             }

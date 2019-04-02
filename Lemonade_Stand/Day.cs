@@ -7,19 +7,19 @@ namespace Lemonade_Stand
 {
     public class Day
     {
-        private int customerLoop;
+        private int customerList;
 
-        public Customer Customer
+        public Weather Weather
         {
-            get => default(Customer);
+            get => default(Weather);
             set
             {
             }
         }
 
-        public Weather Weather
+        public Customer Customer
         {
-            get => default(Weather);
+            get => default(Customer);
             set
             {
             }
