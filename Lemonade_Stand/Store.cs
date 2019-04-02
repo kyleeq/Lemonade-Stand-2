@@ -7,6 +7,7 @@ namespace Lemonade_Stand
 {
     public class Store
     {
+        // member variables
         private int paperCups;
         private int icePrice;
         private int cupsPrice;
@@ -14,5 +15,9 @@ namespace Lemonade_Stand
         private int cupsBought;
         private int iceCubesBought;
         private int lemonsBought;
+
+        // constructor
+
+        // member methods
     }
 }

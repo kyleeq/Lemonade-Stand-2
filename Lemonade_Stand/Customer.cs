@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Lemonade_Stand
 {
-    public abstract class Customer
+    public abstract class Customer : ChildCustomer
     {
         private int age;
         private int sweetnessLevel;
