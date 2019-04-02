@@ -9,10 +9,17 @@ namespace Lemonade_Stand
     {
         // member variables
         private int lemonsPerPitcher;
-        private int sugerInCupsPerPitcher;
+        private int sugarInCupsPerPitcher;
         private int iceCubesPerCup;
 
         // constructor
+        public Recipe()
+        {
+            lemonsPerPitcher = 4;
+            sugarInCupsPerPitcher = 4;
+            iceCubesPerCup = 4;
+
+        }
 
         // member methods
         public void SetRecipe(int lemonsPerPitcher, int sugarInCupsPerPitcher, int iceCubesPerCup)
