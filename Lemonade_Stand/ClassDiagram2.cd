@@ -1,21 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Lemonade_Stand.Weather">
-    <Position X="2.5" Y="2.75" Width="1.5" />
+    <Position X="2.5" Y="2" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Weather.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Store">
     <Position X="4.5" Y="2.75" Width="1.5" />
+    <Members>
+      <Field Name="paperCups" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AABAgAAAAAAAAAAAAAAAAAAAAAAAAIAgAAAQAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAEAAAABAgAACABAAAAAAgAAAAAAAAAgA=</HashCode>
       <FileName>Store.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Customer">
-    <Position X="0.5" Y="2.75" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Customer.cs</FileName>
@@ -34,7 +37,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand.Day">
-    <Position X="1.5" Y="1" Width="1.5" />
+    <Position X="2.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
       <FileName>Day.cs</FileName>
@@ -47,14 +50,14 @@
   <Class Name="Lemonade_Stand.Inventory">
     <Position X="9.25" Y="2.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAIAAAAAAAAACAAAAAAgAAAAAAAAAAQCA=</HashCode>
+      <HashCode>AAAAAAAAAACCAAAAAAAAAAQAAAAAAAAAAAAAAAAAgCA=</HashCode>
       <FileName>Inventory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Player">
     <Position X="6.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAEAAAgAAAgEAAAA=</HashCode>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgEAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

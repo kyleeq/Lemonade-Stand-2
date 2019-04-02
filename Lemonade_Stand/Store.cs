@@ -7,38 +7,12 @@ namespace Lemonade_Stand
 {
     public class Store
     {
-        private int poop;
-
-        public int lemons
-        {
-            get => default(int);
-            set
-            {
-            }
-        }
-
-        public int sugar
-        {
-            get => default(int);
-            set
-            {
-            }
-        }
-
-        public int ice
-        {
-            get => default(int);
-            set
-            {
-            }
-        }
-
-        public int paperCups
-        {
-            get => default(int);
-            set
-            {
-            }
-        }
+        private int paperCups;
+        private int icePrice;
+        private int cupsPrice;
+        private int lemonPrice;
+        private int cupAmount;
+        private int iceAmount;
+        private int lemonAmount;
     }
 }
