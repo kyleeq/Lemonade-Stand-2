@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Lemonade_Stand.Weather">
-    <Position X="2.5" Y="2.75" Width="1.75" />
+    <Position X="1.75" Y="2.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Weather.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Store">
-    <Position X="4.75" Y="2.75" Width="1.5" />
+    <Position X="4" Y="2.25" Width="1.5" />
     <Members>
       <Field Name="paperCups" Hidden="true" />
     </Members>
@@ -41,16 +41,16 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand.Inventory">
-    <Position X="9.25" Y="2.75" Width="2" />
+    <Position X="10" Y="1.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACCAAAAAAAAAAQAAAAAAAAAAAAAAAAAgCA=</HashCode>
       <FileName>Inventory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Player">
-    <Position X="7" Y="1.75" Width="1.5" />
+    <Position X="8" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgEAAAA=</HashCode>
+      <HashCode>AAAAAABBAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgEAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -59,9 +59,9 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand.UserInterface">
-    <Position X="8" Y="0.5" Width="1.5" />
+    <Position X="10.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>UserInterface.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -73,9 +73,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Recipe">
-    <Position X="6.75" Y="3.5" Width="2" />
+    <Position X="6" Y="2.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAIAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAIAAAAAEA=</HashCode>
       <FileName>Recipe.cs</FileName>
     </TypeIdentifier>
   </Class>

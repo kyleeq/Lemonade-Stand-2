@@ -7,10 +7,15 @@ namespace Lemonade_Stand
 {
     public class Inventory
     {
-        private int liquidatedInventoryValue;
+        // member variables        
         private int lemonStock;
         private int iceStock;
         private int cupStock;
         private int sugarStock;
+        private int liquidatedInventoryValue;
+
+        // constructor
+
+        // member methods
     }
 }
