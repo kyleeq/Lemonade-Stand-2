@@ -7,8 +7,18 @@ namespace Lemonade_Stand
 {
     public class Player
     {
-        private int expenses;
-        private int income;
+        // member variables
+        private double expenses;
+        private double income;
+        private double startingMoney;
+
+        // constructor
+        public Player()
+        {
+            startingMoney = 20.00;
+        }
+
+        // member methods
 
         public Inventory Inventory
         {
