@@ -8,44 +8,26 @@ namespace Lemonade_Stand
     public class Player
     {
         // member variables
-        private double expenses;
-        private double income;
-        private double netProfitOrLoss;
-        private double currentMoney;
-        private double cupsSold;
+        private int lemonsPerPitcher;
+        private int sugarInCupsPerPitcher;
+        private int iceCubesPerCup;
+        private double lemonadePrice;
 
-        public double MyProperty { get; set; }
-
-
-        // constructor
-        public Player()
+        public double LemonadePriceProperty      
         {
-            expenses = 0;
-            income = 0;
-            netProfitOrLoss = 0;
-            currentMoney = 20.00;
-            cupsSold = 0;
+            get
+            {
+                return lemonadePrice;
+            }
+            set
+            {
+                if ((value < 0))
+                {
+                    lemonadePrice = 0;
+                }
+            }
         }
 
-        // member methods
-        public void DailyIncome()
-        {
-            moneyMade cupsSold * lemonadePrice;
-        }
-        public void TotalNetProfitOrLoss()
-        {
-            currentMoney = currentMoney + income;
-        }
-        public void TotalExpensesCalc()
-        {
-
-        }
-
-        public double TotalNetWorthCalc(double currentMoney, double expenses)
-        {
-            currentMoney = currentMoney - expenses;
-            return currentMoney;
-        }
         public Inventory Inventory
         {
             get => default(Inventory);
@@ -54,12 +36,24 @@ namespace Lemonade_Stand
             }
         }
 
-        public Recipe Recipe
+        // constructor
+        public Player()
         {
-            get => default(Recipe);
-            set
-            {
-            }
+            lemonsPerPitcher = 4;
+            sugarInCupsPerPitcher = 4;
+            iceCubesPerCup = 4;
+
+        }
+
+        // member methods
+        public void SetRecipe()
+        {
+            Console.WriteLine("Enter the amount of lemons you would like per pitcher of lemonade");
+            lemonsPerPitcher = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the amount of sugar, in cups, you would like per pitcher of lemonade");
+            sugarInCupsPerPitcher = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter how many ice cubes you will be putting into each glass of lemonade");
+            iceCubesPerCup = Convert.ToInt32(Console.ReadLine());
         }
     }
 }

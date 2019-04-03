@@ -8,25 +8,54 @@ namespace Lemonade_Stand
     public class Game
     {
         // member variables
-        private int lemonsBought;
-        private int sugarBought;
-        private int cupsBought;
-        private int iceCubesBought;
+        private double expenses;
+        private double income;
+        private double netProfitOrLoss;
+        private double currentMoney;
+        private double cupsSold;     
 
         // constructor
+        public Game()
+        {
+            expenses = 0;
+            income = 0;
+            netProfitOrLoss = 0;
+            currentMoney = 20.00;
+            cupsSold = 0;
+        }
 
         // member methods
-        public void GoToStore()
+        public Player Player
         {
-            Console.WriteLine("Let's go to the store and purchase some ingrediants for your lemonade.");
-            Console.WriteLine("Enter how many lemons would you like to buy");
-            lemonsBought = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter how many cups of sugar you would like to buy");
-            sugarBought = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter how many paper cups you would like to buy");
-            cupsBought = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter how many ice cubs you would like to buy");
-            iceCubesBought = Convert.ToInt32(Console.ReadLine());
+            get => default(Player);
+            set
+            {
+            }
+        }
+        public void DailyIncome()
+        {
+            //income = cupsSold * lemonadePrice;
+        }
+        public void TotalNetProfitOrLoss()
+        {
+            currentMoney = currentMoney + income;
+        }
+        public void TotalExpensesCalc()
+        {
+
+        }
+
+        public double TotalNetWorthCalc(double currentMoney, double expenses)
+        {
+            currentMoney = currentMoney - expenses;
+            return currentMoney;
+        }
+        public Inventory Inventory
+        {
+            get => default(Inventory);
+            set
+            {
+            }
         }
         public Day Day
         {
@@ -42,14 +71,9 @@ namespace Lemonade_Stand
             set
             {
             }
-        }
-
-        public Player Player
-        {
-            get => default(Player);
-            set
-            {
-            }
-        }
+        }        
     }
 }
+
+
+    

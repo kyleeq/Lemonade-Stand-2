@@ -8,7 +8,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Store">
-    <Position X="4.5" Y="2.25" Width="1.5" />
+    <Position X="7" Y="2.5" Width="1.5" />
     <Members>
       <Field Name="paperCupPrice" Hidden="true" />
     </Members>
@@ -18,9 +18,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Game">
-    <Position X="5.25" Y="0.5" Width="2" />
+    <Position X="4.75" Y="0.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAACAEgAAAQEAAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -41,21 +41,20 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand.Inventory">
-    <Position X="10.25" Y="2.25" Width="2" />
+    <Position X="10.75" Y="2.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACCAAAAAAAAAAQAAAAAAAAAAAAAAAAAgCA=</HashCode>
       <FileName>Inventory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Player">
-    <Position X="8.5" Y="0.5" Width="1.5" />
+    <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAAAAAAAAEAAAAAAAACADAGgAAAgEAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAEAgAAAAQAAAAAAAAAAAAAAgAAEgAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Inventory" />
-      <Property Name="Recipe" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand.UserInterface">
@@ -70,13 +69,6 @@
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAQAAAAAIAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Customer.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Lemonade_Stand.Recipe">
-    <Position X="6.25" Y="3.25" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAEAgAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
-      <FileName>Recipe.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.ChildCustomer">
