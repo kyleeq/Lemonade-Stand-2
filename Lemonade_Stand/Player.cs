@@ -13,7 +13,7 @@ namespace Lemonade_Stand
         private int iceCubesPerCup;
         private double lemonadePrice;
 
-        public double LemonadePriceProperty      
+        public double LemonadePrice
         {
             get
             {
@@ -42,18 +42,15 @@ namespace Lemonade_Stand
             lemonsPerPitcher = 4;
             sugarInCupsPerPitcher = 4;
             iceCubesPerCup = 4;
-
         }
 
         // member methods
         public void SetRecipe()
         {
-            Console.WriteLine("Enter the amount of lemons you would like per pitcher of lemonade");
-            lemonsPerPitcher = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the amount of sugar, in cups, you would like per pitcher of lemonade");
-            sugarInCupsPerPitcher = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter how many ice cubes you will be putting into each glass of lemonade");
-            iceCubesPerCup = Convert.ToInt32(Console.ReadLine());
+            lemonsPerPitcher = UserInterface.LemonRecipePrompt();
+            sugarInCupsPerPitcher = UserInterface.SugarRecipePrompt();
+            iceCubesPerCup =  UserInterface.IceCubeRecipePrompt();
         }
+        
     }
 }

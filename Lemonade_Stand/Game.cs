@@ -7,8 +7,7 @@ namespace Lemonade_Stand
 {
     public class Game
     {
-        // member variables
-        private double expenses;
+        // member variables        
         private double income;
         private double netProfitOrLoss;
         private double currentMoney; // put in Player class?
@@ -16,8 +15,7 @@ namespace Lemonade_Stand
 
         // constructor
         public Game()
-        {
-            expenses = 0;
+        {            
             income = 0;
             netProfitOrLoss = 0;
             currentMoney = 20.00;
@@ -34,16 +32,12 @@ namespace Lemonade_Stand
         }
         public void DailyIncome()
         {
-            income = cupsSold * lemonadePrice;
+            income = cupsSold * Player.LemonadePrice;
         }
         public void TotalNetProfitOrLoss()
         {
             currentMoney = currentMoney + income;
-        }
-        public void TotalExpensesCalc()
-        {
-
-        }
+        }        
 
         public double TotalNetWorthCalc(double currentMoney, double expenses)
         {

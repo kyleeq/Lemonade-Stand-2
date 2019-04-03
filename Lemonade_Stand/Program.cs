@@ -10,6 +10,11 @@ namespace Lemonade_Stand
     {
         static void Main(string[] args)
         {
+            UserInterface.InitialStatement();
+            UserInterface.RecipeStatement();
+            Player player = new Player();
+            UserInterface.LemonRecipePrompt();
+            UserInterface.
         }
     }
 }
