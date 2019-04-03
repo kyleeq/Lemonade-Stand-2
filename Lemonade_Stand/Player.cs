@@ -10,16 +10,20 @@ namespace Lemonade_Stand
         // member variables
         private double expenses;
         private double income;
+        private double netProfitOrLoss;
         private double startingMoney;
 
         // constructor
         public Player()
         {
+            expenses = 0;
+            income = 0;
+            netProfitOrLoss = 0;
             startingMoney = 20.00;
         }
 
         // member methods
-
+        public 
         public Inventory Inventory
         {
             get => default(Inventory);
