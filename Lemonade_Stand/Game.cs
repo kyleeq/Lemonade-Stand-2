@@ -11,7 +11,7 @@ namespace Lemonade_Stand
         private double expenses;
         private double income;
         private double netProfitOrLoss;
-        private double currentMoney;
+        private double currentMoney; // put in Player class?
         private double cupsSold;     
 
         // constructor
@@ -34,7 +34,7 @@ namespace Lemonade_Stand
         }
         public void DailyIncome()
         {
-            //income = cupsSold * lemonadePrice;
+            income = cupsSold * lemonadePrice;
         }
         public void TotalNetProfitOrLoss()
         {
