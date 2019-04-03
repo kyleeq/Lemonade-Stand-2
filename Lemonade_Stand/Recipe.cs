@@ -22,7 +22,7 @@ namespace Lemonade_Stand
         }
 
         // member methods
-        public void SetRecipe(int lemonsPerPitcher, int sugarInCupsPerPitcher, int iceCubesPerCup)
+        public void SetRecipe()
         {
             Console.WriteLine("Enter the amount of lemons you would like per pitcher of lemonade");
             lemonsPerPitcher = Convert.ToInt32(Console.ReadLine());

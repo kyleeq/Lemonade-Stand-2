@@ -12,12 +12,14 @@ namespace Lemonade_Stand
         private int icePrice;
         private int cupsPrice;
         private int lemonPrice;
-        private int cupsBought;
-        private int iceCubesBought;
-        private int lemonsBought;
 
         // constructor
 
         // member methods
+        public int GoToStore()
+        {
+
+        }
     }
+
 }
