@@ -8,10 +8,10 @@ namespace Lemonade_Stand
     public class Store
     {
         // member variables
-        private int lemonPrice;
-        private int sugarPrice;                        
-        private int paperCupsPrice;
-        private int icePrice;
+        private double lemonPrice;
+        private double sugarPrice;                        
+        private double paperCupsPrice;
+        private double iceCubePrice;
 
         private int lemonsBought; // on a given day
         private int sugarBought;
@@ -19,6 +19,13 @@ namespace Lemonade_Stand
         private int iceCubesBought;
 
         // constructor
+        public Store()
+        {
+            lemonPrice = 0.50;
+            sugarPrice = 0.15;
+            paperCupPrice = 0.10;
+            iceCubePrice = 0.05;
+        }       
 
         // member methods
         public void GoToStore()

@@ -24,9 +24,6 @@ namespace Lemonade_Stand
         }
 
         // member methods
-        public int DisplayInventory()
-        {
-            lemonStock = 
-        }
+        //public int DisplayInventory()
     }
 }
