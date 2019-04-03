@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Lemonade_Stand.Weather">
-    <Position X="4.5" Y="3.75" Width="1.75" />
+    <Position X="2.5" Y="3.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Weather.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Store">
-    <Position X="4.5" Y="1.5" Width="1.5" />
+    <Position X="4.5" Y="2.25" Width="1.5" />
     <Members>
-      <Field Name="paperCups" Hidden="true" />
+      <Field Name="paperCupPrice" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>CAAEAAAAAAAAEAEAABAgAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <HashCode>CAAEAAAAAAAIAAEAABAAAAAAAAAIAAAAAAAAAgAAgIA=</HashCode>
       <FileName>Store.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -41,16 +41,16 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand.Inventory">
-    <Position X="9.75" Y="2.25" Width="2" />
+    <Position X="10.25" Y="2.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACCAAAAAAAAAAQAAAAAAAAAAAAAAAAAgCA=</HashCode>
       <FileName>Inventory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Player">
-    <Position X="8" Y="0.5" Width="1.5" />
+    <Position X="8.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAABBAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgEAAAA=</HashCode>
+      <HashCode>AAAAAABAAAAAAAAAAAAEAAAAAAAACADAGgAAAgEAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -68,12 +68,12 @@
   <Class Name="Lemonade_Stand.Customer">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAQAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAgAAAAAAAAAQAAAAAIAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Customer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Recipe">
-    <Position X="6.5" Y="2.75" Width="2" />
+    <Position X="6.25" Y="3.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAEAgAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
       <FileName>Recipe.cs</FileName>

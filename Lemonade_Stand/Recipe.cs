@@ -11,6 +11,22 @@ namespace Lemonade_Stand
         private int lemonsPerPitcher;
         private int sugarInCupsPerPitcher;
         private int iceCubesPerCup;
+        private double lemonadePrice;
+
+        public double MyProperty
+        {
+            get
+            {
+                return lemonadePrice;
+            }
+            set
+            {
+                if ((value > 0))
+                {
+                    lemonadePrice = 0;
+                }
+            }
+        }
 
         // constructor
         public Recipe()

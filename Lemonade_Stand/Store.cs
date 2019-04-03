@@ -10,7 +10,7 @@ namespace Lemonade_Stand
         // member variables
         private double lemonPrice;
         private double sugarPrice;                        
-        private double paperCupsPrice;
+        private double paperCupPrice;
         private double iceCubePrice;
 
         private int lemonsBought; // on a given day

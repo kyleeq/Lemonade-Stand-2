@@ -12,6 +12,10 @@ namespace Lemonade_Stand
         private double income;
         private double netProfitOrLoss;
         private double currentMoney;
+        private double cupsSold;
+
+        public double MyProperty { get; set; }
+
 
         // constructor
         public Player()
@@ -20,10 +24,23 @@ namespace Lemonade_Stand
             income = 0;
             netProfitOrLoss = 0;
             currentMoney = 20.00;
+            cupsSold = 0;
         }
 
         // member methods
-        public void 
+        public void DailyIncome()
+        {
+            moneyMade cupsSold * lemonadePrice;
+        }
+        public void TotalNetProfitOrLoss()
+        {
+            currentMoney = currentMoney + income;
+        }
+        public void TotalExpensesCalc()
+        {
+
+        }
+
         public double TotalNetWorthCalc(double currentMoney, double expenses)
         {
             currentMoney = currentMoney - expenses;
