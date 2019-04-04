@@ -10,8 +10,8 @@ namespace Lemonade_Stand
         // member variables maybeeeeee nah
         private int lemonsUsed;
         private int sugarUsed;
-        private int cupsUsed;        
-        private int iceReset;            
+        private int cupsUsed;
+        private int iceCubesUsed;            
 
         private int customerList;
 

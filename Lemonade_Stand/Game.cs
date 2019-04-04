@@ -11,7 +11,8 @@ namespace Lemonade_Stand
         private double income;
         private double netProfitOrLoss;
         private double currentMoney; // put in Player class?
-        private double cupsSold;     
+        private double cupsSold;
+        public Player Player;
 
         // constructor
         public Game()
@@ -23,15 +24,10 @@ namespace Lemonade_Stand
         }
 
         // member methods
-        public Player Player
-        {
-            get => default(Player);
-            set
-            {
-            }
-        }
+  
         public void DailyIncome()
         {
+     
             income = cupsSold * Player.LemonadePrice;
         }
         public void TotalNetProfitOrLoss()

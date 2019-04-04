@@ -8,26 +8,26 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Store">
-    <Position X="7" Y="2.5" Width="1.5" />
+    <Position X="6.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CAAEAAAAAAEAAAEAABAAAAAAAAAIAAAAAAAABgEAgIA=</HashCode>
       <FileName>Store.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Game">
-    <Position X="4.75" Y="0.5" Width="2" />
+    <Position X="4" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAACADAGgAAAwAAAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
+      <Property Name="Player" />
       <Property Name="Day" />
       <Property Name="Store" />
-      <Property Name="Player" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand.Day">
-    <Position X="2.75" Y="0.5" Width="1.5" />
+    <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAgAAAABFAAAAAAQAAAAAIAAAAA=</HashCode>
       <FileName>Day.cs</FileName>
@@ -38,14 +38,14 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand.Inventory">
-    <Position X="10.75" Y="2.5" Width="2" />
+    <Position X="11.5" Y="2.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAACCAAAAAAAAAAQAAAAAAAAAAAAAAAAAgCA=</HashCode>
+      <HashCode>AAAAAAAAAACGAAAAAAAAAAQAAAAAAAAAAAAAAAAAgCA=</HashCode>
       <FileName>Inventory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Player">
-    <Position X="8.75" Y="0.5" Width="1.5" />
+    <Position X="8" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAEAgAAAAAAAAAAAAACAAAAAgAAEgAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
@@ -55,9 +55,9 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Lemonade_Stand.UserInterface">
-    <Position X="10.75" Y="0.5" Width="1.5" />
+    <Position X="9.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAABAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAAAAoACAAAIAABAAAAAAAQAAAgAAIEAAAQEAAAA=</HashCode>
       <FileName>UserInterface.cs</FileName>
     </TypeIdentifier>
   </Class>
