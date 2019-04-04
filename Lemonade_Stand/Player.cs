@@ -50,6 +50,7 @@ namespace Lemonade_Stand
             lemonsPerPitcher = UserInterface.LemonRecipePrompt();
             sugarInCupsPerPitcher = UserInterface.SugarRecipePrompt();
             iceCubesPerCup =  UserInterface.IceCubeRecipePrompt();
+            lemonadePrice = UserInterface.LemonadePricePrompt();
         }
         
     }

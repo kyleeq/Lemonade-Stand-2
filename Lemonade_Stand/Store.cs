@@ -47,10 +47,10 @@ namespace Lemonade_Stand
 
         public void TotalExpenseCalc()
         {
-            expenses = (lemonsBought * lemonPrice);
-            expenses += (sugarBought * sugarPrice);
-            expenses += (cupsBought * cupPrice);
-            expenses += (iceCubesBought + iceCubePrice);
+            expenses = lemonsBought * lemonPrice;
+            expenses += sugarBought * sugarPrice;
+            expenses += cupsBought * cupPrice;
+            expenses += iceCubesBought + iceCubePrice;
         }
     }
 

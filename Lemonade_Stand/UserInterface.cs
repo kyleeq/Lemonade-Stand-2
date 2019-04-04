@@ -7,7 +7,21 @@ namespace Lemonade_Stand
 {
     public static class UserInterface
     {
-        
+        public static void KickOff()
+        {
+            InitialStatement();
+            RecipeStatement();
+            Player player = new Player();
+            LemonRecipePrompt();
+            SugarRecipePrompt();
+            IceCubeRecipePrompt();
+            LemonadePricePrompt();
+            StoreStatement();
+            BuyLemons();
+            BuySugar();
+            BuyIceCubes();
+            BuyCups();
+        }
         public static void InitialStatement()
         {
             Console.WriteLine("Welcome to Lemonade Stand! This is how you play the game...");
@@ -39,6 +53,12 @@ namespace Lemonade_Stand
             int iceCubesPerCup = Convert.ToInt32(Console.ReadLine());
             return iceCubesPerCup;
         }
+        public static double LemonadePricePrompt()
+        {
+            Console.WriteLine("How much would you like to charge per glass of lemonade?");
+            double lemonadePrice = Convert.ToDouble(Console.ReadLine());
+            return lemonadePrice;
+        }
         public static void StoreStatement()
         {
             Console.WriteLine("Let's go to the store and purchase some ingrediants for your lemonade.");
@@ -46,19 +66,27 @@ namespace Lemonade_Stand
         }
         public static int BuyLemons()
         {
-
+            Console.WriteLine("Enter how many lemons would you like to buy");
+            int lemonsBought = Convert.ToInt32(Console.ReadLine());
+            return lemonsBought;
         }
         public static int BuySugar()
         {
-
+            Console.WriteLine("Enter how many cups of sugar you would like to buy");
+            int sugarBought = Convert.ToInt32(Console.ReadLine());
+            return sugarBought;
         }
         public static int BuyIceCubes()
         {
-
+            Console.WriteLine("Enter how many ice cubs you would like to buy");
+            int iceCubesBought = Convert.ToInt32(Console.ReadLine());
+            return iceCubesBought;
         }
         public static int BuyCups()
         {
-
+            Console.WriteLine("Enter how many paper cups you would like to buy");
+            int cupsBought = Convert.ToInt32(Console.ReadLine());
+            return cupsBought;
         }
     }
 }
