@@ -9,7 +9,8 @@ namespace Lemonade_Stand
     {
         // member variables 
         private static Random randomForecast = new Random();        
-        private int currentWeather;        
+        private int currentWeather;
+        private int Forecast;
 
         // constructor
 
