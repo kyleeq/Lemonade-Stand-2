@@ -10,11 +10,17 @@ namespace Lemonade_Stand
         // member variables 
         private static Random randomForecast = new Random();        
         private int currentWeather;
-        private int Forecast;
 
         // constructor
 
         // member methods
+        public void WeatherDeterminator()
+        {
+            bool isGoodWeather = randomForecast.Next(2); 
+            if (isGoodWeather == true)
+            {
 
+            }
+        }
     }
 }
