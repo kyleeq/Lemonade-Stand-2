@@ -22,19 +22,19 @@ namespace Lemonade_Stand
         {
             if (lemonadePrice < 0.25)
             {
-                for (double i = 0; i <= 50; i += 2);
+                for (double i = 0; i <= 25; i += 2);
             }
             else if (lemonadePrice >= 0.25 && lemonadePrice < 0.50)
             {
-                for (double i = 0; i <= 50; i += 4);
+                for (double i = 0; i <= 25; i += 4);
             }
             else if (lemonadePrice <= 0.50 && lemonadePrice < 0.75)
             {
-                for (double i = 0; i <= 50; i += 7);
+                for (double i = 0; i <= 25; i += 7);
             }
             else
             {
-                for (double i = 0; i <= 50; i += 10) ;
+                for (double i = 0; i <= 25; i += 10) ;
             }
 
                     

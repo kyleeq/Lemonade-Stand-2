@@ -11,7 +11,9 @@ namespace Lemonade_Stand
         private int lemonsUsed;
         private int sugarUsed;
         private int cupsUsed;
-        private int iceCubesUsed;            
+        private int iceCubesUsed;
+        public Weather Weather;
+        public Customer Customer;
 
         private int customerList;
 
@@ -19,20 +21,5 @@ namespace Lemonade_Stand
         // constructor
 
         //member methods        
-        public Weather Weather
-        {
-            get => default(Weather);
-            set
-            {
-            }
-        }
-
-        public Customer Customer
-        {
-            get => default(Customer);
-            set
-            {
-            }
-        }
     }
 }

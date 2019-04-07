@@ -10,6 +10,14 @@ namespace Lemonade_Stand
     {
         static void Main(string[] args)
         {
+            //UserInterface.InitialStatement();
+            //UserInterface.RecipeStatement();
+            //Player player = new Player();
+            //UserInterface.LemonRecipePrompt();
+            //UserInterface.SugarRecipePrompt();
+            //UserInterface.IceCubeRecipePrompt();
+            //UserInterface.LemonadePricePrompt();
+            //UserInterface.StoreStatement();
             UserInterface.KickOff();
         }
     }

@@ -5,16 +5,23 @@ using System.Text;
 
 namespace Lemonade_Stand
 {
-    public abstract class Customer : ChildCustomer
+    public abstract class Customer
     {
-        // member variables
-        private int age;
-        private int sweetnessLevel;
-        private int pricePreference;
+        // member variables     
+        public double pricePreference;
+        public Recipe recipe;
 
         // constructor
+        public Customer()
+        {
+
+        }
 
         // member methods
+        public virtual void PricePointDeterminant(double lemonadePrice)
+        {
+
+        }
         public void DetermineIfWillBuyLemonade(Weather todaysWeather, double recipePrice)
         {
             
