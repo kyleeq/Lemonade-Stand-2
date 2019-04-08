@@ -9,27 +9,49 @@ namespace Lemonade_Stand
     {
         // member variables 
         private static Random rand = new Random();        
-        private int currentWeather;
+        private double currentTemp;
+        private double forecastedTemp;
+        private bool isGoodWeather;
+        private double tempDifference;
+
+        public double ForecastedTemp
+        {
+            get
+            {
+                return forecastedTemp;
+            }
+        }
 
         // constructor
-
-        // member methods
-        public void WeatherForecastDeterminator()
+        public Weather()
         {
-            double weatherTemp = rand.Next(60, 95);
-            bool isGoodWeather = rand.Next(0, 2) > 0; 
+            forecastedTemp = rand.Next(60, 95);
+            isGoodWeather = rand.Next(0, 2) > 0;                      
+        }
+        // member methods
+        public void ForecastedWeather()
+        {
             if (isGoodWeather == true)
             {
-                Console.WriteLine($"The forecasted weather is {weatherTemp} and sunny");
+                Console.WriteLine($"The forecasted weather is {forecastedTemp} and sunny");
             }
             else
             {
-                Console.WriteLine($"The forecasted weather is {weatherTemp} and rainy");
-            }           
+                Console.WriteLine($"The forecasted weather is {forecastedTemp} and rainy");
+            }
         }
-        public void CurrentWeatherDeterminator()
+        public double CurrentWeatherDeterminator()
         {
-            
+            tempDifference = rand.Next(0, 5);
+            if (isGoodWeather == true)
+            {
+                currentTemp = forecastedTemp + tempDifference;
+            }
+            else
+            {
+                currentTemp = forecastedTemp - tempDifference;
+            }
+            return currentTemp;
         }
     }
 }
