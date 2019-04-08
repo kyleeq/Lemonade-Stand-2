@@ -18,8 +18,6 @@ namespace Lemonade_Stand
         private int cupsBought;
         private int iceCubesBought;
 
-        private double expenses;
-
         // constructor
         public Store()
         {
@@ -32,25 +30,41 @@ namespace Lemonade_Stand
             sugarBought = 0;
             cupsBought = 0;
             iceCubesBought = 0;
-
-            expenses = 0;
+            
         }       
 
         // member methods
         public void GoToStore(Player player)
         {
+            lemonsBought = 0;
+            sugarBought = 0;
+            cupsBought = 0;
+            iceCubesBought = 0;
+
             lemonsBought = UserInterface.BuyLemons();
             sugarBought = UserInterface.BuySugar();
             iceCubesBought = UserInterface.BuyIceCubes();
             cupsBought = UserInterface.BuyCups();
+            double expense = TotalExpenseCalc();
+            if (expense > player.bank)
+            {
+                Console.WriteLine("Oops. Looks like you don't have enough money for that purchase.");
+                GoToStore(player);
+            }
+            else
+            {
+                player.bank -= expense;
+
+            }
         }
 
-        public void TotalExpenseCalc()
-        {
-            expenses = lemonsBought * lemonPrice;
+        public double TotalExpenseCalc()
+        {           
+            double expenses = lemonsBought * lemonPrice;
             expenses += sugarBought * sugarPrice;
-            expenses += cupsBought * cupPrice;
             expenses += iceCubesBought + iceCubePrice;
+            expenses += cupsBought * cupPrice;
+            return expenses;
         }
     }
 

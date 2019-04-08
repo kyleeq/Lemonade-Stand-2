@@ -9,10 +9,9 @@ namespace Lemonade_Stand
     {
         // member variables        
         public int lemonStock; // number if lemons
-        private int sugarStock; // in cups
-        private int cupStock; // number of cups
-        private int iceStock; // number of cubes 
-        private int liquidatedInventoryValue;
+        public int sugarStock; // in cups
+        public int cupStock; // number of cups
+        public int iceStock; // number of cubes
 
         // constructor
         public Inventory()
@@ -20,7 +19,6 @@ namespace Lemonade_Stand
             lemonStock = 0;
             iceStock = 0;
             cupStock = 0;
-            liquidatedInventoryValue = 0;
         }
 
         // member methods
