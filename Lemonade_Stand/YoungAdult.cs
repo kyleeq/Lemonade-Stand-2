@@ -12,7 +12,7 @@ namespace Lemonade_Stand
         // constructor
         public YoungAdult()
         {
-
+            willBuy = false;
         }
 
         // member methods
@@ -22,42 +22,57 @@ namespace Lemonade_Stand
 
             if (lemonadePrice < 0.25)
             {
-                customerPercent = customerGenerator.Next(2);
-                if (customerPercent == 2)
-                {
-                    willBuy = true;
+                if (currentTemp > 75)
+                {                    
+                    customerPercent = customerGenerator.Next(2);
+                    if (customerPercent == 2)
+                    {
+                        willBuy = true;
+                    }
                 }
             }
             else if (lemonadePrice >= 0.25 && lemonadePrice < 0.50)
             {
-                customerPercent = customerGenerator.Next(4);
-                if (customerPercent == 4)
+                if (currentTemp > 80)
                 {
-                    willBuy = true;
+                    customerPercent = customerGenerator.Next(4);
+                    if (customerPercent == 4)
+                    {
+                        willBuy = true;
+                    }
                 }
             }
             else if (lemonadePrice <= 0.50 && lemonadePrice < 0.75)
             {
-                customerPercent = customerGenerator.Next(5);
-                if (customerPercent == 5)
+                if (currentTemp > 80)
                 {
-                    willBuy = true;
+                    customerPercent = customerGenerator.Next(6);
+                    if (customerPercent == 6)
+                    {
+                        willBuy = true;
+                    }
                 }
             }
             else if (lemonadePrice <= 0.75 && lemonadePrice < 1.00)
             {
-                customerPercent = customerGenerator.Next(7);
-                if (customerPercent == 7)
+                if (currentTemp > 85)
                 {
-                    willBuy = true;
+                    customerPercent = customerGenerator.Next(7);
+                    if (customerPercent == 7)
+                    {
+                        willBuy = true;
+                    }
                 }
             }
             else
             {
-                customerPercent = customerGenerator.Next(10);
-                if (customerPercent == 10)
+                if (currentTemp > 90)
                 {
-                    willBuy = true;
+                    customerPercent = customerGenerator.Next(10);
+                    if (customerPercent == 10)
+                    {
+                        willBuy = true;
+                    }
                 }
             }
         }

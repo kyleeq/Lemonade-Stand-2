@@ -11,8 +11,8 @@ namespace Lemonade_Stand
         
         // constructor
         public Child()
-        {          
-            
+        {
+            willBuy = false;
         }
 
         // member methods
@@ -22,18 +22,16 @@ namespace Lemonade_Stand
             
             if (lemonadePrice < 0.25)
             {               
-                if (currentTemp < 75)
+                if (currentTemp > 75)
                 {
-                    willBuy = false;
+                    willBuy = true;
                 }
-                willBuy = true;
             }
 
             else if (lemonadePrice >= 0.25 && lemonadePrice < 0.50)
             {
-                if (currentTemp < 80)
+                if (currentTemp > 80)
                 {
-                    willBuy = false; 
                     customerPercent = customerGenerator.Next(2);
                     if (customerPercent == 2)
                     {
@@ -43,9 +41,8 @@ namespace Lemonade_Stand
             }
             else if (lemonadePrice <= 0.50 && lemonadePrice < 0.75)
             {
-                if (currentTemp < 85)
+                if (currentTemp > 80)
                 {
-                    willBuy = false;
                     customerPercent = customerGenerator.Next(5);
                     if (customerPercent == 5)
                     {
@@ -55,9 +52,8 @@ namespace Lemonade_Stand
             }
             else if (lemonadePrice <= 0.75 && lemonadePrice < 1.00)
             {
-                if (currentTemp < 90)
+                if (currentTemp > 90)
                 {
-                    willBuy = false;
                     customerPercent = customerGenerator.Next(6);
                     if (customerPercent == 6)
                     {
@@ -67,9 +63,8 @@ namespace Lemonade_Stand
             }
             else
             {
-                if (currentTemp < 95)
+                if (currentTemp > 90)
                 {
-                    willBuy = false;
                     customerPercent = customerGenerator.Next(7);
                     if (customerPercent == 7)
                     {
