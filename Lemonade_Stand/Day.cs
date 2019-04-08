@@ -17,7 +17,6 @@ namespace Lemonade_Stand
 
         private int customerList;
 
-
         // constructor
 
         //member methods        
