@@ -8,9 +8,7 @@ namespace Lemonade_Stand
     public class Child : Customer
     {
         // member variables
-
-
-
+        
         // constructor
         public Child()
         {          
@@ -18,31 +16,47 @@ namespace Lemonade_Stand
         }
 
         // member methods
-        public override void PricePointDeterminant(double lemonadePrice)
+        public override void PricePointDeterminant(double lemonadePrice, double currentTemp)
         {
+            int customerPercent;
+
             if (lemonadePrice < 0.25)
-            {
-                for (double i = 0; i <= 25; i += 2);
+            {                
+                willBuy = true;
             }
             else if (lemonadePrice >= 0.25 && lemonadePrice < 0.50)
             {
-                for (double i = 0; i <= 25; i += 4);
+                customerPercent = customerGenerator.Next(2);
+                if (customerPercent == 2)
+                {
+                    willBuy = true;
+                }
             }
             else if (lemonadePrice <= 0.50 && lemonadePrice < 0.75)
             {
-                for (double i = 0; i <= 25; i += 7);
+                customerPercent = customerGenerator.Next(5);
+                if (customerPercent == 5)
+                {
+                    willBuy = true;
+                }
             }
             else if (lemonadePrice <= 0.75 && lemonadePrice < 1.00)
             {
-                for (double i = 0; i <= 25; i += 10);
+                customerPercent = customerGenerator.Next(7);
+                if (customerPercent == 7)
+                {
+                    willBuy = true;
+                }
             }
             else
             {
-                for (double i = 0; i < 25; i += 15);
+                customerPercent = customerGenerator.Next(10);
+                if (customerPercent == 9)
+                {
+                    willBuy = true;
+                }
             }
-
-
-                    
+            
         }
     }
 }
