@@ -9,10 +9,14 @@ namespace Lemonade_Stand
     {
         // member variables                
         public Inventory inventory;
-        public Recipe Recipe;
+        public Recipe recipe;
 
         // constructor
-
+        public Player()
+        {
+            inventory = new Inventory();
+            recipe = new Recipe();
+        }
 
         // member methods
 

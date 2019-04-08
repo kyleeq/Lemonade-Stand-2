@@ -7,28 +7,33 @@ namespace Lemonade_Stand
 {
     public class Day
     {
-        // member variables maybeeeeee nah
-        private int lemonsUsed;
-        private int sugarUsed;
-        private int cupsUsed;
-        private int iceCubesUsed;
-        public Weather Weather;
-        public Customer Customer;
+        // member variables
+        public Weather weather;
+        public Customer customer;
+        public Store store;
+        public List<Customer> customers;
 
-        private int customerList;
+        public int customerList;
 
         // constructor
+        public Day()
+        {
+            weather = new Weather();
+            customer = new Customer();
+            store = new Store();
+            customers = new List<Customer>();
+        }
 
         //member methods    
-        public void DayKickOff()
+        public void DayKickOff(Player player)
         {
             UserInterface.RecipeStatement();
-            Player player = new Player();
-            UserInterface.LemonRecipePrompt();
-            UserInterface.SugarRecipePrompt();
-            UserInterface.IceCubeRecipePrompt();
-            UserInterface.LemonadePricePrompt();
+            player.recipe.SetRecipe();
             UserInterface.StoreStatement();
+            UserInterface.BuyLemons();
+            UserInterface.BuySugar();
+            UserInterface.BuyIceCubes();
+            UserInterface.BuyCups();
         }
     }
 }

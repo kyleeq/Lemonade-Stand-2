@@ -7,25 +7,10 @@ namespace Lemonade_Stand
 {
     public class Recipe
     {
-        private int lemonsPerPitcher;
-        private int sugarInCupsPerPitcher;
-        private int iceCubesPerCup;
-        private double lemonadePrice;
-
-        public double LemonadePrice
-        {
-            get
-            {
-                return lemonadePrice;
-            }
-            set
-            {
-                if ((value < 0))
-                {
-                    lemonadePrice = 0;
-                }
-            }
-        }
+        public int lemonsPerPitcher;
+        public int sugarInCupsPerPitcher;
+        public int iceCubesPerCup;
+        public double lemonadePrice;        
 
         // constructor
         public Recipe()

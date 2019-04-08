@@ -27,15 +27,16 @@ namespace Lemonade_Stand
         }
 
         // member methods
-        public void KickOff()
+        public void GameKickOff()
         {            
             UserInterface.InitialStatement();
+
         }
   
         public double DailyIncome()
         {
      
-            income = cupsSold * recipe.LemonadePrice;
+            income = cupsSold * recipe.lemonadePrice;
             return income;
         }
         public void TotalNetProfitOrLoss()
