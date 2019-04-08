@@ -12,8 +12,6 @@ namespace Lemonade_Stand
         {
             Game game = new Game();
             game.GameKickOff();
-            Day day = new Day();
-            day.DayKickOff();
         }
     }
 }

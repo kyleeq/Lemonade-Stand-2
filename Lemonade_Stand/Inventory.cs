@@ -22,11 +22,7 @@ namespace Lemonade_Stand
             cupStock = 0;
         }
 
-        // member methods
-        public int DisplayInventory()
-        {
-            lemonStock = 
-            Console.WriteLine();
-        }
+        // member methods        
+        
     }
 }

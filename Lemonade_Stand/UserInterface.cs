@@ -13,11 +13,18 @@ namespace Lemonade_Stand
             Console.ReadLine();
         }
 
-        public static void RecipeStatement()
+        public static bool RecipeStatement()
         {
-            Console.WriteLine("Would you like to enter in your own recipe or use the generic recipe? Please type in 'my own' or 'generic'. " +
-                    "The generic recipe consists of four lemons and four cups of sugar per pitcher and four ice cubes per glass of lemonade");
-            Console.ReadLine();
+            Console.WriteLine("Would you like to enter in your own recipe? Enter 'yes' if you would.");
+            string yesNo = Console.ReadLine();
+            if (yesNo == "yes")
+            {
+                return true;
+            }
+            else 
+            {
+                return false;
+            }
         }
         public static int LemonRecipePrompt()
         {
@@ -44,10 +51,18 @@ namespace Lemonade_Stand
             double lemonadePrice = Convert.ToDouble(Console.ReadLine());
             return lemonadePrice;
         }
-        public static void StoreStatement()
+        public static bool StoreStatement()
         {
-            Console.WriteLine("Let's go to the store and purchase some ingrediants for your lemonade.");
-            Console.ReadLine();
+            Console.WriteLine("Would you like to buy some items to make lemonade? If so, enter 'yes'.");
+            string yesNo = Console.ReadLine();
+            if (yesNo == "yes")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         public static int BuyLemons()
         {
@@ -57,7 +72,7 @@ namespace Lemonade_Stand
         }
         public static int BuySugar()
         {
-            Console.WriteLine("Enter how many cups of sugar you would like to buy");
+            Console.WriteLine("Enter how many cubs of sugar you would like to buy");
             int sugarBought = Convert.ToInt32(Console.ReadLine());
             return sugarBought;
         }

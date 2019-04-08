@@ -13,7 +13,6 @@ namespace Lemonade_Stand
         private double currentMoney; // put in Player class?
         private double cupsSold;
         public Player player;
-        public Day day;
         public Store store;
         public Recipe recipe;
 
@@ -24,13 +23,22 @@ namespace Lemonade_Stand
             netProfitOrLoss = 0;
             currentMoney = 20.00;
             cupsSold = 0;
+            player = new Player();
+            
         }
 
         // member methods
         public void GameKickOff()
         {            
             UserInterface.InitialStatement();
-
+            double initialPlayerBank = player.bank;
+            for (int i = 0; i < 7; i++)
+            {
+                Day day = new Day();
+                day.DayKickOff(player);
+            }
+            Console.WriteLine($"Your total Net Profit/Loss was {player.bank - initialPlayerBank} dollars.");
+            Console.ReadLine();
         }
   
         public double DailyIncome()

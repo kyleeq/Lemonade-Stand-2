@@ -7,17 +7,17 @@ namespace Lemonade_Stand
 {
     public class Recipe
     {
-        public int lemonsPerPitcher;
-        public int sugarInCupsPerPitcher;
-        public int iceCubesPerCup;
+        public double lemonsPerPitcher;
+        public double sugarInCupsPerPitcher;
+        public double iceCubesPerCup;
         public double lemonadePrice;        
 
         // constructor
         public Recipe()
 
         {
-            lemonsPerPitcher = 4;
-            sugarInCupsPerPitcher = 4;
+            lemonsPerPitcher = 0.25;
+            sugarInCupsPerPitcher = 0.25;
             iceCubesPerCup = 4;
         }
         // member variabless
