@@ -7,7 +7,7 @@ namespace Lemonade_Stand
 {
     public class Game
     {
-        // member variables        
+        // member variables             
         private double income;
         private double netProfitOrLoss;
         private double currentMoney; // put in Player class?
@@ -27,6 +27,10 @@ namespace Lemonade_Stand
         }
 
         // member methods
+        public void KickOff()
+        {            
+            UserInterface.InitialStatement();
+        }
   
         public double DailyIncome()
         {

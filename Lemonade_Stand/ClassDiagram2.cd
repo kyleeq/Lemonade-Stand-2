@@ -3,7 +3,7 @@
   <Class Name="Lemonade_Stand.Weather">
     <Position X="4.25" Y="3" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIgAAAAEBAAABAAAAIAAAACBAQAAAAAAAAAEAAA=</HashCode>
       <FileName>Weather.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -63,22 +63,15 @@
   <Class Name="Lemonade_Stand.UserInterface">
     <Position X="12" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAoACAAAIAABAAAAAAAQAAAgAAIEAAAQEAAAA=</HashCode>
+      <HashCode>AAABAABAoACAAAIAgBAAAAAAAQAAAgAAIEAAAQEAAAA=</HashCode>
       <FileName>UserInterface.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Customer">
     <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAQAQAAAAAIAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAIAAAQAQAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
       <FileName>Customer.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Lemonade_Stand.Child">
-    <Position X="2.5" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ChildCustomer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lemonade_Stand.Recipe">
@@ -86,27 +79,6 @@
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAEAgAAAAAAAAAAAAACAAAAAgAAEAAAAAA=</HashCode>
       <FileName>Recipe.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Lemonade_Stand.MiddleAged">
-    <Position X="0.5" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>MiddleAgedCustomer.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Lemonade_Stand.Elderly">
-    <Position X="0.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ElderlyCustomer.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Lemonade_Stand.YoungAdult">
-    <Position X="0.5" Y="4" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>YoungAdult.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

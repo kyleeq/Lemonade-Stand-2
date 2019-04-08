@@ -19,6 +19,16 @@ namespace Lemonade_Stand
 
         // constructor
 
-        //member methods        
+        //member methods    
+        public void DayKickOff()
+        {
+            UserInterface.RecipeStatement();
+            Player player = new Player();
+            UserInterface.LemonRecipePrompt();
+            UserInterface.SugarRecipePrompt();
+            UserInterface.IceCubeRecipePrompt();
+            UserInterface.LemonadePricePrompt();
+            UserInterface.StoreStatement();
+        }
     }
 }
