@@ -54,10 +54,16 @@ namespace Lemonade_Stand
             else
             {
                 player.bank -= expense;
-
+                ItemsBought(player);
             }
         }
-
+        public void ItemsBought(Player player)
+        {
+            player.inventory.lemonStock += lemonsBought;
+            player.inventory.sugarStock += sugarBought;
+            player.inventory.iceStock += iceCubesBought;
+            player.inventory.cupStock += cupsBought;
+        }
         public double TotalExpenseCalc()
         {           
             double expenses = lemonsBought * lemonPrice;
