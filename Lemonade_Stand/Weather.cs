@@ -8,19 +8,27 @@ namespace Lemonade_Stand
     public class Weather
     {
         // member variables 
-        private static Random randomForecast = new Random();        
+        private static Random rand = new Random();        
         private int currentWeather;
 
         // constructor
 
         // member methods
-        public void WeatherDeterminator()
+        public void GoodWeatherDeterminator()
         {
-            bool isGoodWeather = randomForecast.Next(2); 
+            bool isGoodWeather = rand.Next(0, 2) > 0; 
             if (isGoodWeather == true)
             {
-
+                Console.WriteLine("The forecasted weather is sunny");
             }
+            else
+            {
+                Console.WriteLine("The forecasted weather is rainy");
+            }            
+        }
+        public void TempDeterminator()
+        {
+            double weatherTemp = rand.Next(60, 95);
         }
     }
 }
