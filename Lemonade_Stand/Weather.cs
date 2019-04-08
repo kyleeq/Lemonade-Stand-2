@@ -14,6 +14,13 @@ namespace Lemonade_Stand
         private bool isGoodWeather;
         private double tempDifference;
 
+        public double CurrentTemp
+        {
+            get
+            {
+                return currentTemp;
+            }
+        }
         public bool IsGoodWeather
         {
             get

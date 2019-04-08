@@ -88,9 +88,10 @@ namespace Lemonade_Stand
             int cupsBought = Convert.ToInt32(Console.ReadLine());
             return cupsBought;
         }
-        public static void ForecastedWeather()
+        public static void CurrentWeatherStatement(Weather weather)
         {
-
+            
+            Console.WriteLine($"It is currently {weather.CurrentTemp} degrees outside.");
         }
     }
 }
