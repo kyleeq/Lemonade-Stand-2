@@ -10,6 +10,8 @@ namespace Lemonade_Stand
         // member variables     
         public double pricePreference;
         public Recipe recipe;
+        public static Random customerGenerator = new Random();
+
 
         // constructor
         public Customer()
@@ -18,7 +20,7 @@ namespace Lemonade_Stand
         }
 
         // member methods
-        public virtual void PricePointDeterminant(double lemonadePrice)
+        public virtual void PricePointDeterminant(double lemonadePrice, double currentTemp)
         {
 
         }
