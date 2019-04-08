@@ -35,25 +35,28 @@ namespace Lemonade_Stand
                 return forecastedTemp;
             }
         }
+        public string WeatherQuality
+        {
+            get
+            {
+                if (isGoodWeather == true)
+                {
+                    return "sunny";
+                }
+                else
+                {
+                    return "rainy";
+                }
+            }
+        }
 
         // constructor
         public Weather()
         {
-            forecastedTemp = rand.Next(60, 95);
+            forecastedTemp = rand.Next(70, 95);
             isGoodWeather = rand.Next(0, 2) > 0;                      
         }
-        // member methods
-        public void ForecastedWeather()
-        {
-            if (isGoodWeather == true)
-            {
-                Console.WriteLine($"The forecasted weather is {forecastedTemp} and sunny");
-            }
-            else
-            {
-                Console.WriteLine($"The forecasted weather is {forecastedTemp} and rainy");
-            }
-        }
+        // member methods        
         public double CurrentWeatherDeterminator()
         {
             tempDifference = rand.Next(0, 5);
