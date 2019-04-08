@@ -28,7 +28,16 @@ namespace Lemonade_Stand
             UserInterface.RecipeStatement();
             player.recipe.SetRecipe();
             UserInterface.StoreStatement();
+            UserInterface.ForecastedWeatherStatement(weather);
             store.GoToStore(player);
+            UserInterface.CurrentWeatherStatement(weather);
+            foreach (Customer customer in customers)
+            {
+                if (customer.PricePointDeterminant(player.recipe.lemonadePrice, weather.CurrentTemp) == true)
+                {
+                    player.sellCup++;
+                }
+            }
         }
         public void GenerateCustomers()
         {

@@ -20,7 +20,7 @@ namespace Lemonade_Stand
         }
 
         // member methods
-        public void PricePointDeterminant(double lemonadePrice, double currentTemp)
+        public bool PricePointDeterminant(double lemonadePrice, double currentTemp)
         {
             int customerPercent;
 
@@ -79,6 +79,7 @@ namespace Lemonade_Stand
                     }
                 }
             }
+            return willBuy;
         }
 
     }

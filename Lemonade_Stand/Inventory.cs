@@ -8,24 +8,25 @@ namespace Lemonade_Stand
     public class Inventory
     {
         // member variables        
-        public int lemonStock; // number if lemons
-        public int sugarStock; // in cups
-        public int cupStock; // number of cups
-        public int iceStock; // number of cubes
+        public double lemonStock; // number if lemons
+        public double sugarStock; // in cups
+        public double cupStock; // number of cups
+        public double iceStock; // number of cubes
 
         // constructor
         public Inventory()
         {
             lemonStock = 0;
+            sugarStock = 0;
             iceStock = 0;
             cupStock = 0;
         }
 
         // member methods
-        //public int DisplayInventory()
-        //{
-        //    lemonStock = 
-        //    Console.WriteLine();
-        //}
+        public int DisplayInventory()
+        {
+            lemonStock = 
+            Console.WriteLine();
+        }
     }
 }
