@@ -31,6 +31,7 @@ namespace Lemonade_Stand
                 inventory.sugarStock -= recipe.sugarInCupsPerPitcher;
                 inventory.iceStock -= recipe.iceCubesPerCup;
                 inventory.cupStock --;
+                sellCup++;
                 return true;
             }
             else

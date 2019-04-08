@@ -25,6 +25,7 @@ namespace Lemonade_Stand
         //member methods    
         public void DayKickOff(Player player)
         {
+            double initialBank = player.bank;
             UserInterface.RecipeStatement();
             player.recipe.SetRecipe();
             UserInterface.StoreStatement();
@@ -38,6 +39,8 @@ namespace Lemonade_Stand
                     player.sellCup++;
                 }
             }
+            Console.WriteLine($"You sold {player.sellCup} cups. You made {player.bank - initialBank} dollars.");
+
         }
         public void GenerateCustomers()
         {

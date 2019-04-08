@@ -7,21 +7,6 @@ namespace Lemonade_Stand
 {
     public static class UserInterface
     {
-        public static void KickOff()
-        {
-            InitialStatement();
-            RecipeStatement();
-            Player player = new Player();
-            LemonRecipePrompt();
-            SugarRecipePrompt();
-            IceCubeRecipePrompt();
-            LemonadePricePrompt();
-            StoreStatement();
-            BuyLemons();
-            BuySugar();
-            BuyIceCubes();
-            BuyCups();
-        }
         public static void InitialStatement()
         {
             Console.WriteLine("Welcome to Lemonade Stand! This is how you play the game...");
@@ -95,6 +80,14 @@ namespace Lemonade_Stand
         public static void CurrentWeatherStatement(Weather weather)
         {            
             Console.WriteLine($"It is currently {weather.CurrentTemp} degrees outside and {weather.WeatherQuality}.");
+        }
+        public static void DisplayInventory(Inventory inventory)
+        {
+            Console.WriteLine("Here is your daily inventory report");
+            Console.WriteLine($"Lemons: {inventory.lemonStock}");
+            Console.WriteLine($"Cups of Sugar: {inventory.sugarStock}");
+            Console.WriteLine($"Ice cubes: {inventory.iceStock}");
+            Console.WriteLine($"Paper cups: {inventory.cupStock}");
         }
     }
 }
