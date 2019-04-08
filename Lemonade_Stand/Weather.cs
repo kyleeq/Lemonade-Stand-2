@@ -14,21 +14,22 @@ namespace Lemonade_Stand
         // constructor
 
         // member methods
-        public void GoodWeatherDeterminator()
+        public void WeatherForecastDeterminator()
         {
+            double weatherTemp = rand.Next(60, 95);
             bool isGoodWeather = rand.Next(0, 2) > 0; 
             if (isGoodWeather == true)
             {
-                Console.WriteLine("The forecasted weather is sunny");
+                Console.WriteLine($"The forecasted weather is {weatherTemp} and sunny");
             }
             else
             {
-                Console.WriteLine("The forecasted weather is rainy");
-            }            
+                Console.WriteLine($"The forecasted weather is {weatherTemp} and rainy");
+            }           
         }
-        public void TempDeterminator()
+        public void CurrentWeatherDeterminator()
         {
-            double weatherTemp = rand.Next(60, 95);
+            
         }
     }
 }
