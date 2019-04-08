@@ -10,7 +10,7 @@ namespace Lemonade_Stand
         // member variables        
         public Recipe recipe;
         public bool willBuy;
-        public Random customerGenerator = new Random();
+        public static Random customerGenerator = new Random();
 
 
         // constructor

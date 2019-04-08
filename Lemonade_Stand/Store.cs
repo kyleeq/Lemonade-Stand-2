@@ -37,7 +37,7 @@ namespace Lemonade_Stand
         }       
 
         // member methods
-        public void GoToStore()
+        public void GoToStore(Player player)
         {
             lemonsBought = UserInterface.BuyLemons();
             sugarBought = UserInterface.BuySugar();

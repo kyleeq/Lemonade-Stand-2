@@ -11,9 +11,7 @@ namespace Lemonade_Stand
         public Weather weather;
         public Customer customer;
         public Store store;
-        public List<Customer> customers;
-
-        public int customerList;
+        public List<Customer> customers;        
 
         // constructor
         public Day()
@@ -21,7 +19,7 @@ namespace Lemonade_Stand
             weather = new Weather();
             customer = new Customer();
             store = new Store();
-            customers = new List<Customer>();
+            GenerateCustomers();
         }
 
         //member methods    
@@ -30,10 +28,14 @@ namespace Lemonade_Stand
             UserInterface.RecipeStatement();
             player.recipe.SetRecipe();
             UserInterface.StoreStatement();
-            UserInterface.BuyLemons();
-            UserInterface.BuySugar();
-            UserInterface.BuyIceCubes();
-            UserInterface.BuyCups();
+            store.GoToStore(player);
+        }
+        public void GenerateCustomers()
+        {
+            for (int i = 0; i < 150; i++)
+            {
+                customers.Add(new Customer());
+            }
         }
     }
 }
