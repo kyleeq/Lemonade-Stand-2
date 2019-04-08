@@ -16,27 +16,46 @@ namespace Lemonade_Stand
         }
 
         // member methods
-        public override void PricePointDeterminant(double lemonadePrice)
+        public override void PricePointDeterminant(double lemonadePrice, double currentTemp)
         {
+            int customerPercent;
+
             if (lemonadePrice < 0.25)
             {
-                for (double i = 0; i <= 25; i++);
+                customerPercent = customerGenerator.Next(2);
+                willBuy = true;
             }
             else if (lemonadePrice >= 0.25 && lemonadePrice < 0.50)
             {
-                for (double i = 0; i <= 25; i += 2);
+                customerPercent = customerGenerator.Next(3);
+                if (customerPercent == 3)
+                {
+                    willBuy = true;
+                }
             }
             else if (lemonadePrice <= 0.50 && lemonadePrice < 0.75)
             {
-                for (double i = 0; i <= 25; i += 3);
+                customerPercent = customerGenerator.Next(5);
+                if (customerPercent == 5)
+                {
+                    willBuy = true;
+                }
             }
             else if (lemonadePrice <= 0.75 && lemonadePrice < 1.00)
             {
-                for (double i = 0; i <= 25; i += 5);
+                customerPercent = customerGenerator.Next(7);
+                if (customerPercent == 7)
+                {
+                    willBuy = true;
+                }
             }
             else
             {
-                for (double i = 0; i <= 25; i += 8);
+                customerPercent = customerGenerator.Next(8);
+                if (customerPercent == 8)
+                {
+                    willBuy = true;
+                }
             }
         }
     }

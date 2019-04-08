@@ -42,15 +42,15 @@ namespace Lemonade_Stand
             }
             else if (lemonadePrice <= 0.75 && lemonadePrice < 1.00)
             {
-                customerPercent = customerGenerator.Next(7);
-                if (customerPercent == 7)
+                customerPercent = customerGenerator.Next(6);
+                if (customerPercent == 6)
                 {
                     willBuy = true;
                 }
             }
             else
             {
-                customerPercent = customerGenerator.Next(10);
+                customerPercent = customerGenerator.Next(9);
                 if (customerPercent == 9)
                 {
                     willBuy = true;
